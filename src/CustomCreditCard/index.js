@@ -33,7 +33,6 @@ const CustomCreditCard = () => {
 
   const handleInput = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setCardDetail({ ...cardDetail, [name]: value });
   };
 
@@ -54,7 +53,6 @@ const CustomCreditCard = () => {
   }, [cardDetail.number]);
 
   const handleFocus = (e) => {
-    console.log(e.target.name);
     if (e.target.name === 'cvc') {
       setCardFace(true);
     } else {
@@ -67,8 +65,6 @@ const CustomCreditCard = () => {
     e.preventDefault();
     alert(JSON.stringify(cardDetail));
   };
-
-  
 
   return (
     <div>

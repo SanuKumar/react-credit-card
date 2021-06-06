@@ -1,13 +1,17 @@
 import React from 'react';
-import './App.css';
-import Card from './components/card';
 import 'react-credit-cards/es/styles-compiled.css';
+import { Switch, Route } from 'react-router';
+import Card from './ReactCreditCard/card';
+import Home from './components/home';
+import CustomCreditCard from './CustomCreditCard/index';
 
 function App() {
   return (
-    <div className='App'>
-      <Card />
-    </div>
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/lib-card' component={Card} />
+      <Route exact path='/no-lib-card' component={CustomCreditCard} />
+    </Switch>
   );
 }
 

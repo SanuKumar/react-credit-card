@@ -12,7 +12,7 @@ const home = ({ history }) => {
       </div>
       <div style={{ margin: '10px 0 20px 0' }}>
         <button onClick={() => history.push('/no-lib-card')}>
-          Custome Credit Card
+          Custom Credit Card
         </button>
       </div>
     </div>

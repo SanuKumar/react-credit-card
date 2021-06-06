@@ -1,0 +1,77 @@
+.card-container {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  background-image: url('../assets/images/2.jpeg');
+  background-size: 100% 100%;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, -50%);
+}
+
+.card-name-label {
+  float: left;
+  position: absolute;
+  padding-left: 20px;
+  top: 6rem;
+  color: #fff;
+  font-size: x-small;
+}
+.card-name {
+  float: left;
+  top: 7rem;
+  position: absolute;
+  padding-left: 20px;
+  color: #fff;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.card-number {
+  color: #fff;
+  position: absolute;
+  top: 3rem;
+  padding-left: 20px;
+}
+
+.card-expiry-label {
+  position: absolute;
+  color: #fff;
+  font-size: x-small;
+  top: 6rem;
+  right: 0;
+  padding-right: 20px;
+}
+
+.card-expiry {
+  position: absolute;
+  color: #fff;
+  font-size: x-small;
+  top: 7rem;
+  right: 0;
+  padding-right: 25px;
+}
+
+.card-cvv-label {
+  position: absolute;
+  color: #fff;
+  font-size: x-small;
+  top: 2rem;
+  right: 0;
+  padding-right: 20px;
+}
+
+.card-cvv {
+  position: absolute;
+  color: black;
+  font-size: x-small;
+  top: 3.5rem;
+  right: 0;
+  border: 1px solid black;
+  background-color: #fff;
+  width: 80%;
+  height: 1rem;
+  border-radius: 4px;
+}

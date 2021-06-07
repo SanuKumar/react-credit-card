@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "//.github.io/credit-card/static/css/main.7dd9499a.chunk.css",
+    "main.js": "//.github.io/credit-card/static/js/main.1e3b8446.chunk.js",
+    "main.js.map": "//.github.io/credit-card/static/js/main.1e3b8446.chunk.js.map",
+    "runtime-main.js": "//.github.io/credit-card/static/js/runtime-main.baed128b.js",
+    "runtime-main.js.map": "//.github.io/credit-card/static/js/runtime-main.baed128b.js.map",
+    "static/css/2.4096cf77.chunk.css": "//.github.io/credit-card/static/css/2.4096cf77.chunk.css",
+    "static/js/2.8eccb792.chunk.js": "//.github.io/credit-card/static/js/2.8eccb792.chunk.js",
+    "static/js/2.8eccb792.chunk.js.map": "//.github.io/credit-card/static/js/2.8eccb792.chunk.js.map",
+    "static/js/3.ed44dfc2.chunk.js": "//.github.io/credit-card/static/js/3.ed44dfc2.chunk.js",
+    "static/js/3.ed44dfc2.chunk.js.map": "//.github.io/credit-card/static/js/3.ed44dfc2.chunk.js.map",
+    "index.html": "//.github.io/credit-card/index.html",
+    "static/css/2.4096cf77.chunk.css.map": "//.github.io/credit-card/static/css/2.4096cf77.chunk.css.map",
+    "static/css/main.7dd9499a.chunk.css.map": "//.github.io/credit-card/static/css/main.7dd9499a.chunk.css.map",
+    "static/js/2.8eccb792.chunk.js.LICENSE.txt": "//.github.io/credit-card/static/js/2.8eccb792.chunk.js.LICENSE.txt",
+    "static/media/CustomCreditCard.css": "//.github.io/credit-card/static/media/2.2e510a0d.jpeg",
+    "static/media/chip.png": "//.github.io/credit-card/static/media/chip.f88a902d.png",
+    "static/media/discover.png": "//.github.io/credit-card/static/media/discover.3dde2fd5.png",
+    "static/media/jcb.png": "//.github.io/credit-card/static/media/jcb.23c6093d.png",
+    "static/media/mastercard.png": "//.github.io/credit-card/static/media/mastercard.fdd172ae.png",
+    "static/media/unionpay.png": "//.github.io/credit-card/static/media/unionpay.5c3adaa8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.baed128b.js",
+    "static/css/2.4096cf77.chunk.css",
+    "static/js/2.8eccb792.chunk.js",
+    "static/css/main.7dd9499a.chunk.css",
+    "static/js/main.1e3b8446.chunk.js"
+  ]
+}

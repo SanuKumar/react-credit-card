@@ -69,9 +69,67 @@
   font-size: x-small;
   top: 3.5rem;
   right: 0;
-  border: 1px solid black;
   background-color: #fff;
-  width: 80%;
+  width: 100%;
   height: 1rem;
   border-radius: 4px;
+  text-align: end;
+}
+
+/* flip the screen */
+.scene {
+  width: 200px;
+  height: 260px;
+  border: 1px solid #ccc;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+.form-month {
+  height: 1.75rem;
+  margin: 1px;
+}
+
+.form-year {
+  height: 1.75rem;
+}
+
+.exp-div {
+  display: flex;
+  justify-content: space-around;
 }

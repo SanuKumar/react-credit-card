@@ -72,6 +72,7 @@ const CustomCreditCard = () => {
         cardInfo={cardInfo}
         cardDetail={cardDetail}
         cardFace={cardFace}
+        focus={cardDetail.focus}
       />
       <div className='form-container' style={{ marginTop: '80px' }}>
         <form>
@@ -106,50 +107,57 @@ const CustomCreditCard = () => {
               className='form-input'
             />
           </div>
-
-          <select
-            onChange={handleInput}
-            name='month'
-            defaultValue={date.getMonth()}
-            ref={monthSelectRef}
-            onFocus={handleFocus}
-          >
-            {MONTHS_NAMES_FULL.map((month, index) => (
-              <option key={month} value={('0' + index).slice(-2)}>
-                {month}
-              </option>
-            ))}
-          </select>
-          <select
-            defaultValue={date.getFullYear()}
-            ref={yearSelectRef}
-            onChange={handleInput}
-            name='year'
-            onFocus={handleFocus}
-          >
-            <option value={22}>2022</option>
-            <option value={21}>2021</option>
-            <option value={20}>2020</option>
-            <option value={19}>2019</option>
-            <option value={18}>2018</option>
-            <option value={17}>2017</option>
-            <option value={16}>2016</option>
-            <option value={15}>2015</option>
-          </select>
-          <div className='form-div'>
-            <div className='form-label'>
-              <label>CVV</label>
+          <div className='exp-div'>
+            <div>
+              <div className='form-label'>
+                <label>Expiration Date</label>
+              </div>
+              <select
+                onChange={handleInput}
+                name='month'
+                defaultValue={date.getMonth()}
+                ref={monthSelectRef}
+                onFocus={handleFocus}
+                className='form-month'
+              >
+                {MONTHS_NAMES_FULL.map((month, index) => (
+                  <option key={month} value={('0' + index).slice(-2)}>
+                    {month}
+                  </option>
+                ))}
+              </select>
+              <select
+                defaultValue={date.getFullYear()}
+                ref={yearSelectRef}
+                onChange={handleInput}
+                name='year'
+                onFocus={handleFocus}
+                className='form-year'
+              >
+                <option value={22}>2022</option>
+                <option value={21}>2021</option>
+                <option value={20}>2020</option>
+                <option value={19}>2019</option>
+                <option value={18}>2018</option>
+                <option value={17}>2017</option>
+                <option value={16}>2016</option>
+                <option value={15}>2015</option>
+              </select>
             </div>
-            <input
-              type='text'
-              name='cvc'
-              placeholder='CVV'
-              value={cardDetail.cvc}
-              onChange={handleInput}
-              onFocus={handleFocus}
-              maxLength='4'
-              className='form-input'
-            />
+            <div className='form-div'>
+              <div className='form-label'>
+                <label>CVV</label>
+              </div>
+              <input
+                type='text'
+                name='cvc'
+                placeholder='CVV'
+                value={cardDetail.cvc}
+                onChange={handleInput}
+                onFocus={handleFocus}
+                maxLength='4'
+              />
+            </div>
           </div>
           <button type='submit' className='form-button' onClick={handleSubmit}>
             Submit

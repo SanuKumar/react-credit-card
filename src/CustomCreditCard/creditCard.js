@@ -3,7 +3,7 @@ import './CustomCreditCard.css';
 import { cc_format } from '../helper';
 import Visa from '../assets/images/visa.png';
 
-const CreditCard = ({ cardInfo, cardDetail, cardFace }) => {
+const CreditCard = ({ cardInfo, cardDetail, cardFace, focus }) => {
   const [imageData, setImageData] = useState({});
 
   //get all the images from asserts
